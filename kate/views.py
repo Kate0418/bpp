@@ -60,7 +60,7 @@ def ww(aa):
                     else:
                         ii=0
                     uu+=i
-            url=[ ifs(uu[i-1],uu[i]) for i in range(1,len(uu))]
+            url=[ ifs(uu[i-1],uu[i]) for i in range(1,len(uu)) if ifs(uu[i-1],uu[i]) != " "]
         if uu=="":
             uu=["*"]
         context={
