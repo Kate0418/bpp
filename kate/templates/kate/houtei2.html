@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                padding-top: 50px;
+            }
+            h1{ text-align: center }
+            button{
+                width: 300px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #68779a;
+        background: #cbe8fa;
+        cursor: pointer;
+            }
+            a{
+                position: absolute;
+                top: 20px;
+                left:20px;
+            }
+            .img0{
+                width: 2%;
+            }
+            .img1{
+                width:25%;
+            }
+            p{
+            font-size: 50px;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <p>二次方程式サイト</p>
+        <h1><img class="img1" src="http://127.0.0.1:1000/gazou/注意書き.gif"></h1>
+        <form action="/houtei2/">
+            <h1>{{form}}=0</h1>
+            <h1><button type="submit">0K</button></h1>
+            </form>
+            <h1>
+                結果：
+            <img class="img0" src="{{uu}}">
+            {% for i in url %}
+            {% if i != "" %}
+            <img class="img0" src="{{i}}">
+            {% endif %}
+            {% endfor %}
+            </h1>
+            <h1><a style="text-decoration:none;" href="http://127.0.0.1:8000/top">🔙</a></h1>
+    </body>
+</html>

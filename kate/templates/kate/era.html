@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="ja">
+        <style>
+            h1{ text-align: center }
+            body{
+                padding-top: 50px;
+            }
+            button{
+                width: 300px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #68779a;
+        background: #cbe8fa;
+        cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>正しい入力値を設定してください</h1>
+        <h1><button onclick="goBack()">戻る</button></h1>
+        <script>
+            function goBack() {
+                // 戻りたい処理をここに追加
+                window.history.back();
+            }
+        </script>
+    </body>
+</html>
