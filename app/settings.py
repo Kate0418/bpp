@@ -27,12 +27,11 @@ env.read_env(os.path.join(BASE_DIR,'.env'))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 ALLOWED_HOSTS=["*"]
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = env('SECRET_KEY')#ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 
