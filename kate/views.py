@@ -347,3 +347,5 @@ def yy(aa):
         return redirect("http://127.0.0.1:8000/era")
 def uu(aa):
     return render(aa,"kate/era.html")
+def gazou0():
+    return "./templates/kate/gazou/注意書き.gif"
