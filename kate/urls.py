@@ -10,6 +10,5 @@ urlpatterns = [
     path("houtei1/",views.rr,name="rr"),
     path("houtei2/",views.tt,name="tt"),
     path("renritu/",views.yy,name="yy"),
-    path("era/",views.uu,name="uu"),
-    path("gazou0/",views.gazou0,name="gazou0")
+    path("era/",views.uu,name="uu")
 ]
